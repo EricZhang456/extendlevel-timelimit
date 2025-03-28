@@ -14,7 +14,7 @@ public Plugin myinfo = {
 }
 
 public void OnPluginStart() {
-    g_cvExtendLevelTimeLimit = CreateConVar("sv_vote_issue_extendlevel_timelimit", "300", "Minimum amount of remaining time on the map can players call an extend level vote (in seconds).");
+    g_cvExtendLevelTimeLimit = CreateConVar("sv_vote_issue_extendlevel_timelimit", "300", "Maximum amount of remaining time on the map can players call an extend level vote (in seconds).");
     AddCommandListener(HandleCallVote, "callvote");
     AutoExecConfig(true);
 }
